@@ -93,6 +93,9 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
+.icon-bar{
+    color: white;
+}
 .col-md-4 {
 	padding-bottom: 20px;
 }
@@ -346,7 +349,9 @@ a:after {
 	padding-top: 40px;
 	padding-bottom: 20px;
 	border-bottom: 1px solid #ddd;
+    margin-left: 0px;
 	text-align: center;
+    width: 100%;
 }
 
 #footerwrap h4 {
@@ -472,56 +477,6 @@ a:after {
 }
 
 
-
-/* ==========================================================================
-   Services Section
-   ========================================================================== */
-
-.service-trigger {
-    display: block;
-	position: relative;
-    margin-bottom: 15px;
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    height: 168px;
-    cursor: pointer;
-	padding: 90px 20px 50px 20px;
-    border: none;
-    background: #333;
-}
-
-.service-trigger:before {
-    width: 100%;
-    top: 50px;
-    color: #3498db;
-    font-size: 36px;
-    text-align: center;
-	position: absolute;
-	left: 0;
-}
-
-.service-active .service-trigger {
-    background: #222;
-}
-
-.service-active p {
-	font-family: 'Lato', sans-serif;
-	padding-top: 10px;
-}
-
-.service-content {
-    padding: 15px 20px;
-    background: #e6eaed;
-    display: block;
-    height: auto
-}
-
-.service-content p:last-child {
-    margin: 0;
-}
-
-
 /* ==========================================================================
    Image Mask
    ========================================================================== */
@@ -622,31 +577,6 @@ a:after {
 }
 
 
-/* ==========================================================================
-   Blog Section
-   ========================================================================== */
-
-.blog-bg {
-	background: #2b2b2b;
-	padding-right: 0px;
-	padding-left: 0px;
-	
-}
-
-.blog-bg h {
-	color: #dadada;
-	padding-top: 0px;
-}
-
-.blog-bg h5 {
-	color: #dadada;
-	font-size: 11px;
-}
-
-.blog-content {
-	padding-top: 10px;
-	background: #f2f2f2;
-}
 
 /* ==========================================================================
    MEDIA QUERIES
