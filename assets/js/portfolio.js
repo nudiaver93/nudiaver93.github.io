@@ -2,6 +2,6 @@
   $(document).ready(function(){
       $(".headertext").typed({
         strings: ["<p>Navin Udiaver | Web Developer"],
-        typeSpeed: 30,
+        typeSpeed: 10,
       });
   });

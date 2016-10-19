@@ -24,7 +24,7 @@
   <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
   
 
-<div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+<div id="navbar" class="navbar navbar-default navbar-fixed-top topdiv" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
@@ -61,12 +61,12 @@
 			<div class="row white">
 			<br>
 			<br>
-			<p class="centered" style="margin-bottom: 0px"><img class="img img-circle" src="assets/img/team/team04.jpg" width="200px" height="200px"></p>
+			<p class="centered" style="margin-bottom: 0px"><img class="fader img img-circle" src="assets/img/team/team04.jpg" width="200px" height="200px"></p>
 			<br>
-				<h1 class="centered" style="margin-top: 0px; padding-top: 0px">About Me</h1>
+				<h1 class="centered fader" style="margin-top: 0px; padding-top: 0px">About Me</h1>
 				<hr>
 				<div class="col-lg-10 col-lg-offset-1 text-center">
-				<span class="font-weight: bolder">
+				<span class="fader">
 					<p style="padding-bottom: 0; margin-bottom: 0px">I am an aspiring Web Developer living in the great city of Austin, Texas. My educational background from The University of Texas at Austin includes everything from Economics, Mathematics, Software Development and Business. When I'm not coding, I spend most of my time either playing guitar or basketball. </p>
 			<br>
 			<br>
@@ -79,7 +79,7 @@
 		</div><!-- /container -->
 		<div id="greywrap">
 			<div class="row">
-				<div class="col-lg-6 callout">
+				<div class="col-lg-6 callout fader">
 				<br>
 					<span class="fa fa-pencil-square-o fa-4x" style='padding-top: 0px'></span>
 					<h2>Education</h2>
@@ -92,7 +92,7 @@
 					<br>
 					</span>
 				</div>
-				<div class="col-lg-6 callout">
+				<div class="col-lg-6 callout fader2">
 					<span class="fa fa-desktop fa-4x" style='padding-top: 20px'></span>
 					<h2 >Skills</h2>
 					<div class="row" style="padding-left: 10px">
@@ -139,7 +139,7 @@
 		<br>
 			<div class="row">
 				<br>
-				<h1 class="centered">SOME OF MY PAST WORK</h1>
+				<h1 class="centered fader">SOME OF MY PAST WORK</h1>
 				<hr>
 				<br>
 				<br>
@@ -148,7 +148,7 @@
 			<div class="row">	
 			
 				<!-- PORTFOLIO IMAGE 1 -->
-				<div class="col-md-4 ">
+				<div class="col-md-4 fader">
 			    	<div class="grid mask">
 						<figure>
 							<img class="img-responsive" src="assets/img/portfolio/calc.png" alt="">
@@ -160,9 +160,6 @@
 			    	</div><!-- /grid-mask -->
 				</div><!-- /col -->
 				
-				
-						 <!-- MODAL SHOW THE PORTFOLIO IMAGE. In this demo, all links point to this modal. You should create
-						      a modal for each of your projects. -->
 						      
 			 <div class="modal fade" id="calcModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 						    <div class="modal-dialog">
@@ -174,7 +171,7 @@
 						        <div class="modal-body">
 						          <p><img class="img-responsive" src="assets/img/portfolio/calc2.png" alt=""></p>
 						          <p>This is a calculator application I created primarily using JavaScript. I find that successfully building and the simplest applications goes a long way in terms of building your foundation as a JavaScript developer.</p>
-						          <p><b><a src="https://github.com/nudiaver93/JS-Calculator" formtarget="_blank" class="newTab">View Documentation</a><a src="https://mysterious-earth-91964.herokuapp.com/" formtarget="_blank" class="newTab pull-right">View Application</a></b></p>
+						          <p><b><a src="https://github.com/nudiaver93/JS-Calculator" formtarget="_blank" class="newTab">View Documentation</a><a src="http://codepen.io/nudiaver93/pen/GjYzqL" formtarget="_blank" class="newTab pull-right">View Application</a></b></p>
 						        </div>
 						        <div class="modal-footer">
 						        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -185,7 +182,7 @@
 				
 				
 				<!-- PORTFOLIO IMAGE 2 -->
-				<div class="col-md-4">
+				<div class="col-md-4 fader">
 			    	<div class="grid mask">
 						<figure>
 							<img class="img-responsive" src="assets/img/portfolio/nintendo.png" alt="">
@@ -217,7 +214,7 @@
 				</div><!-- /.modal -->
 
 				<!-- PORTFOLIO IMAGE 3 -->
-				<div class="col-md-4">
+				<div class="col-md-4 fader">
 			    	<div class="grid mask">
 						<figure>
 							<img class="img-responsive" src="assets/img/portfolio/liri.png" alt="">
@@ -255,49 +252,111 @@
 	</div><!-- /container -->
 
 
+
+			<!-- PORTFOLIO IMAGE 4 -->
+				<div class="col-md-4 fader">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="assets/img/portfolio/troll.png" alt="">
+							<figcaption style="padding-left: 0">
+								<h5 class="pull-left">Trollbridge</h5>
+								<a data-toggle="modal" href="#liriModal" class="btn btn-primary btn-lg pull-right">Look</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+				</div><!-- /col -->
+			</div><!-- /row -->
+
+			 <div class="modal fade" id="liriModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						    <div class="modal-dialog">
+						      <div class="modal-content">
+						        <div class="modal-header">
+						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						          <h4 class="modal-title">Trollbridge</h4>
+						        </div>
+						        <div class="modal-body">
+						          <p><img class="img-responsive" src="assets/img/portfolio/liri2.png" alt=""></p>
+						          <p>This was the first major project I contributed towards in The Coding Bootcamp at UT Austin. This application conducts a sentiment analysis on the most recent tweets of the input Twitter handle. My job was to ha</p>
+						          <p><b><a src="https://github.com/nudiaver93/Liri-2.0" formtarget="_blank" class="newTab">View Documentation</a></b></p>
+						        </div>
+						        <div class="modal-footer">
+						        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					        </div>
+				        </div><!-- /.modal-content -->
+				    </div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+			</div><!-- /row -->
+			<br>
+			<br>
+		</div><!-- /row -->
+	</div><!-- /container -->
+
+
 	<div class="container" id="contact" name="contact" style='margin-bottom: 20px'>
 		<br>
-			<h1 class="centered">LET'S GET IN TOUCH</h1>
+			<h1 class="centered fader">LET'S GET IN TOUCH</h1>
 			<hr>
 			<br>
 
-			<div class='row'>
-				<div class='col-sm-6'>
+			<div>
+				<div class='col-sm-6 fader'>
 					<h3 class='text-center' style='font-weight: bold;'> Contact Me: </h3>
-						<p style='padding-top: 10px; font-size: 1.1em'>I am very excited for having the opportunity and skills to launch a career in this amazing industry. While I am currently looking for a position as a junior developer who primarily focuses on the front end, I am constantly messing with back end technologies in order to learn how to successfully develop full stack applications and to grow as a coder. Feel free to look at my <a href="assets/pdf/Resume.pdf" target="_blank" style='background-color: white'>resume</a> as well! Looking forward to hearing from you!</p>
+						<p style='padding-top: 10px;'>I am very excited for having the opportunity and skills to launch a career in this amazing industry. While I am currently looking for a position as a junior developer who primarily focuses on the front end, I am constantly messing with back end technologies in order to learn how to successfully develop full stack applications and to grow as a coder. Feel free to look at my <a href="assets/pdf/Resume.pdf" target="_blank" style='background-color: white'>resume</a> as well! Looking forward to hearing from you!</p>
 				</div>
-    			<div class='col-sm-6'>
+    			<div class='col-sm-6 fader'>
     			<h3 style='font-weight: bold' class='text-center'>Contact Info: </h3>
 
-    				<span class='contact-info row' style=''>
+    				<span class='contact-info' style=''>
 
-    				<span class='col-sm-9 col-sm-offset-3'>
+    				<ul>
+
+    				<span class='row'>
+
+    				<span class='col-sm-10 col-sm-offset-2'>
+
+	    				<!-- Phone -->
+						<li><address><i class="fa fa-phone fa-2x" aria-hidden="true" style='float: left;'> &nbsp;&nbsp;</i><a href='tel:409-679-1533' style='font-size: 1.2em; background-color: #fff;'>409-679-1533</a></address></li>
 
 
-    				<!-- Phone -->
-    				<span style='line-height: 50px'>
-					<address><i class="fa fa-phone fa-2x" aria-hidden="true" style='float: left; vertical-align: bottom;'> &nbsp;&nbsp;</i><a href='tel:409-679-1533' style='font-size: 1.2em; background-color: #fff;'>409-679-1533</a></address>
+					</span></span>
+
+
+    				<span class='row'>
+
+    				<span class='col-sm-10 col-sm-offset-2'>
+
+	    				<!-- Email Address -->
+						<li><address><i class="fa fa-envelope fa-2x" aria-hidden="true" style='float: left;'> &nbsp;</i><a href='mailto:navin.udiaver@gmail.com' style='font-size: 1.2em; background-color: #fff;'>navin.udiaver@gmail.com</a></address></li>
+
+
+					</span></span>
+
+
+    				<span class='row'>					
+
+    				<span class='col-sm-10 col-sm-offset-2'>
+
+						
+						<!-- Social Media -->
+						<ul style='clear: both; align: center'class="social-network social-circle">
+						    <li><a href="https://www.linkedin.com/in/navinudiaver" target='_blank' class="icoAnimate" title="Linkedin"><i class="fa fa-linkedin fa-lg"></i></a></li>
+						
+						    <li><a href="https://www.github.com/nudiaver93" target='_blank' class="icoAnimate" style='margin-left: 5px'
+						    title="Github"><i class="fa fa-github fa-lg"></i></a></li>		
+
+						</ul>
+
+					</span></span>
+    			
+					<ul>
+    				
     				</span>
 
-
-
-    				<!-- Email Address -->
-					<address><i class="fa fa-envelope fa-2x" aria-hidden="true" style='float: left; vertical-align: bottom;'> &nbsp;</i><a href='mailto:navin.udiaver@gmail.com' style='font-size: 1.2em; background-color: #fff; vertical-align: top; padding-bottom: 15px;'>navin.udiaver@gmail.com</a></address>
-
-					
-					<!-- Social Media -->
-					<ul style='clear: both; align: center'class="social-network social-circle">
-					    <li><a href="https://www.linkedin.com/in/navinudiaver" target='_blank' class="icoAnimate" title="Linkedin"><i class="fa fa-linkedin fa-lg"></i></a></li>
-					
-					    <li><a href="https://www.github.com/nudiaver93" target='_blank' class="icoAnimate" style='margin-left: 5px'
-					    title="Github"><i class="fa fa-github fa-lg"></i></a></li>
-					
-					</ul>
-
-					</span>
     			</div>
+			
 			</div>
-	</div>
+	
+		</div>
 
 
 		<div id="footerwrap">
@@ -318,10 +377,57 @@
     <script type="text/javascript" src="assets/js/smoothscroll.js"></script>
 	<script type="text/javascript" src="assets/js/typed.js"></script>
 	<script type="text/javascript" src="assets/js/portfolio.js"></script>
+
 	<script>
-	$('.newTab').click(function(){
-		window.open($(this).attr('src'));
-	});
+		$('.newTab').click(function(){
+			window.open($(this).attr('src'));
+		});
+	</script>
+
+	<script>
+$(function() {
+    $(window).scroll( function(){
+       
+        $('.fader').each( function(i){
+            
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            bottom_of_window = bottom_of_window + 250;  
+          
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'}, 600);
+                    
+            }
+        }); 
+    
+    });
+});
+	</script>
+
+	<script>
+$(function() {
+    $(window).scroll( function(){
+       
+        $('.fader2').each( function(i){
+            
+
+
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            bottom_of_window = bottom_of_window + 600;  
+          
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'}, 300);
+                    
+            }
+        }); 
+    
+    });
+});
 	</script>
   </body>
 </html>

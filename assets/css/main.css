@@ -1,13 +1,3 @@
-/*
- * Author: Carlos Alvarez
- * URL: http://Alvarez.is
- *
- * Project Name: SHIELD - Free Bootstrap 3 Theme
- * Version: 1.0
- * Date: 02-11-2013
- * URL: http://blacktie.co/
- */
-
 
 /* ==========================================================================
    Base Styles and Bootstrap Modifications
@@ -26,12 +16,6 @@ body {
     line-height: 1.4;
 }
 
-/*
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
-
 ::-moz-selection {
     background: #f2c2c9;
     color: #a4003a;
@@ -44,10 +28,6 @@ body {
     text-shadow: none;
 }
 
-/*
- * A better looking default horizontal rule
- */
-
  hr {
     display: block;
     height: 1px;
@@ -57,17 +37,11 @@ body {
     padding: 0;
 }
 
-/*
- * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
- */
 
  img {
     vertical-align: middle;
 }
 
-/*
- * Allow only vertical resizing of textareas.
- */
 
  textarea {
     resize: vertical;
@@ -93,9 +67,15 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
-.icon-bar{
-    color: white;
+.navbar-toggle {
+    background-color: white;
 }
+
+ .navbar button:select {
+    background-color: white;
+}
+
+
 .col-md-4 {
 	padding-bottom: 20px;
 }
@@ -104,6 +84,12 @@ body {
 margin-right: 0px;
 margin-left: -15px;
 }
+
+.fader, .fader2 {
+    opacity:0;
+}
+
+.
 
 .modal-header {
 	background: #3498db;
@@ -153,7 +139,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* Paragraph & Typographic */
 p {
     line-height: 28px;
     margin-bottom: 25px;
@@ -345,7 +330,7 @@ a:after {
 
 #footerwrap {
 	background: #2b2b2b;
-	margin-top: 0px;
+	margin-top: 30px;
 	padding-top: 40px;
 	padding-bottom: 20px;
 	border-bottom: 1px solid #ddd;
@@ -371,50 +356,9 @@ a:after {
 	padding-top: 25px;
 }
 
-/* Section Dividers */
-.section-divider {
-    z-index: 999;
-    width: 100%;
-    display: table;
-    max-height: 450px;
-    border-bottom: 2px solid #E6EAED;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    padding-top: 30px;
-    padding-bottom: 70px;
-    margin-top: 0px;
-
-
-    background-position: center center;
-
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-
-    background-attachment: relative;
-    
-    text-align: center;
-}
-
-.textdivider h1 {
-	padding-top: 70px;
-	color: white;
-	font-size: 40px;
-}
-
-.textdivider p {
-	color: white;
-	font-size: 25px;
-}
-
+/*****
+NAVIGATION 
+*****/
 #navbar.navbar-default .navbar-brand {
     color: rgba(119, 119, 119, 1);
 }
@@ -439,18 +383,22 @@ a:after {
     background-color: rgba(0, 0, 0, 1);
 }
 #navbar.navbar-default .navbar-toggle {
-    border-color: #000000;
+    background-color: #000;
+    border-color: #444;
 }
 #navbar.navbar-default .navbar-toggle:hover,
 #navbar.navbar-default .navbar-toggle:focus {
-    background-color: #000000;
+    background-color: #000;
+    border-color: #fff;
 }
 #navbar.navbar-default .navbar-toggle .icon-bar {
-    background-color: #000000;
+    color: #aaa;
 }
+
 #navbar.navbar-default .navbar-toggle:hover .icon-bar,
 #navbar.navbar-default .navbar-toggle:focus .icon-bar {
-    background-color: #000000;
+    background-color: #fff;
+
 }
 
 /* Section Dividers Backgrounds */
@@ -476,7 +424,22 @@ a:after {
 	background-image: url('../img/bg/divider6.jpg')
 }
 
+ul {
+    list-style: none;
+}
 
+.contact-info ul{
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.contact-info .row {
+    height: 0px;
+}
+
+.contact-info {
+    line-height: 10px;
+}
 /* ==========================================================================
    Image Mask
    ========================================================================== */
@@ -576,8 +539,6 @@ a:after {
 	right: 30px;
 }
 
-
-
 /* ==========================================================================
    MEDIA QUERIES
    ========================================================================== */
@@ -590,10 +551,16 @@ a:after {
 
 /*ipad portrait*/
 @media only screen and (min-device-width:768px) and (max-device-width : 1024px) and (orientation : portrait){
-	.header{background-attachment: scroll;}
+	.header{
+        background-attachment: scroll;
+    }
+
+    .contact-me p{
+        font-size: 0.9em;
+    }
 }
 
-@media screen and (max-width:769px) {
+@media screen and (max-width:768px) {
 	#headerwrap h1 {
 		font-size: 80px;
 	}
@@ -601,5 +568,19 @@ a:after {
 		font-size: 30px;
 		line-height: 38px;
 	}
+
+    .contact-info {
+        width: 50%;
+    }
+    .contact-info address {
+        font-size: 1.2em
+    }
+
+    .contact-info ul {
+        margin: 0 auto;
+        float: none;
+        display: block;
+    }
+
 }
 
