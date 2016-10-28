@@ -3,6 +3,6 @@
       $(".headertext").typed({
         strings: ["<p>Navin Udiaver </p> <p> Web Developer </p> "],
         typeSpeed: 20,
-        startDelay: 2200,
+        startDelay: 2100,
       });
   });

@@ -3,6 +3,6 @@
 		setTimeout(function(){
             $(".se-pre-con").fadeOut('fast', function () {
             });
-        },1990);
+        },1900);
 
 	});
