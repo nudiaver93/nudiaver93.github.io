@@ -16,6 +16,18 @@ body {
     line-height: 1.4;
 }
 
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(../img/Preloader_1.gif) center no-repeat #fff;
+}
+
 ::-moz-selection {
     background: #f2c2c9;
     color: #a4003a;
@@ -85,11 +97,13 @@ margin-right: 0px;
 margin-left: -15px;
 }
 
-.fader, .fader2 {
-    opacity:0;
+.headertext {
+font-family: 'Crimson Text', serif;
 }
 
-.
+.contactlink {
+    background-color: white;
+}
 
 .modal-header {
 	background: #3498db;
@@ -268,8 +282,10 @@ a:after {
 	margin-top: -50px;
 	padding-top:120px;
 	text-align:center;
-	background-attachment: relative;
-	background-position: center center;
+	background-attachment: fixed;
+	background-position: center;
+    background-repeat: none;
+    background-size: cover;
 	min-height: 700px;
 
     width: 100%;
@@ -364,6 +380,7 @@ NAVIGATION
 }
 #navbar.navbar-default {
     font-size: 16px;
+    font-family: 'Crimson Text', serif;
     background-color: rgba(0, 0, 0, 1);
     border-bottom-width: 0px;
 }
