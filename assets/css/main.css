@@ -79,6 +79,12 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
+.clearfix {
+    position: relative;
+    top: 20%;
+    left: auto;
+    right: auto;
+}
 .navbar-toggle {
     background-color: white;
 }
@@ -97,10 +103,16 @@ margin-right: 0px;
 margin-left: -15px;
 }
 
-.headertext {
-font-family: 'Crimson Text', serif;
+.headertext, .headertext2 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 40px;
+    margin-top: 0px;
+    text-shadow: 2px 2px 2px black;
 }
 
+.headertext2 {
+    font-size: 30px;
+}
 .contactlink {
     background-color: white;
 }
@@ -279,8 +291,7 @@ a:after {
 
 #headerwrap {
 	background: url(../img/header_bg.jpg) no-repeat center top;
-	margin-top: -50px;
-	padding-top:120px;
+	padding-top: 25px;
 	text-align:center;
 	background-attachment: fixed;
 	background-position: center;
@@ -307,8 +318,8 @@ a:after {
 	padding-bottom: 30px;
 	letter-spacing: 8px;
 	font-size: 100px;
-	font-weight: bold;
-	text-shadow: 2px 2px 2px #000;
+	font-weight: bolder;
+	text-shadow: 1px 1px 1px #000;
 }
 
 #headerwrap p {
@@ -316,10 +327,9 @@ a:after {
 	font-size: 40px;
 	font-weight: 400;
 	text-align: center;
-	line-height: 40px;
-	letter-spacing: 3px;
-	margin-left: 15px;
-	text-shadow: 1px 1px 1px #000;
+	line-height: 50px;
+	letter-spacing: 2px;
+	text-shadow: 2px 2px 2px #000;
 }
 
 #greywrap {
@@ -554,6 +564,10 @@ ul {
 	top:10px;
 	bottom: 10px;
 	right: 30px;
+}
+
+.abouttext {
+    font-size: 1.3em;
 }
 
 /* ==========================================================================
